@@ -92,8 +92,8 @@
     (into
       [:svg
        {:view-box (str "0 0 " board-size " " board-size)
-        :width 500
-        :height 500}]
+        :width 400
+        :height 400}]
        (for [i (range board-size)
              j (range board-size)]
          (case (get-in @app-state [:board j i])
